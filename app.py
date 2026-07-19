@@ -2,7 +2,7 @@
 import gradio as gr
 import requests
 from google import genai
-client=genai.Client(api_key=" ")
+client=genai.Client(api_key="Gemini_API")
 def get_coordinates(city):
   url=f"https://geocoding-api.open-meteo.com/v1/search?name={city}&count=1"
   response=requests.get(url,timeout=10)
